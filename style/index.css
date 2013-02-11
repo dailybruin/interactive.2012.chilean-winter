@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+	background-image: url(../media/background.jpg);
+	background-size: 100%;
+	background-position: 0 -400% ;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #2b5683;
+	font-family: 'open_baskerville_0.0.53normal';
+}
+
+a:link, a:visited {text-decoration:none;}
+a:hover, a:active {text-decoration:underline;} 
+
+h1 /*Title of Article*/{
+	font-size:30px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:20px;
+}
+
+h2 /*Author of Article*/{
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:20px;
+}
+h2 a{
+	color:white;
+}
+h3 /*side-nav-top*/{
+	text-align: right;
+	color:#2b5683;
+	margin-bottom: 0px;
+	position: relative;
+	top: 8px;
+
+}
+h5 /*top-nav*/{
+	color:white;
+	margin-top:20px;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+p {
+	margin-left:50px;
+	margin-right:50px;
+	padding-bottom:10px;
+	line-height:115%;
+
+}
+
+article img {
+	margin-left:50px;
+	margin-top:50px;
+	margin-bottom:30px;
+	width:520px;
+	height:340px;
+}
+
+
+h3.verticaltext {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	font-size: 80px;
+	margin-top: 300px;
+	margin-left: -86px;
+}
+
+header {
+	width: 940px;
+}
+header br {
+	clear: both;
+}
+
+#editorsnote{
+	margin: 25px 0 25px 0;
+	width: 100%;
+}
+
+#dblogo {
+	float:left;
+}
+
+
+#title {
+	float: left;
+    color: #2b5683;
+    font-size: 50px;
+    padding-left: 15px;
+    margin-top:35px;
+    border-left: 2px solid #2b5683;
+}
+#main-container {
+	clear: both;
+	width:940px;
+	margin:auto;
+	padding: 10px;
+}
+
+#main {
+	float:left;
+	width:620px;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.tabs {
+	width: 100%;
+}
+
+.tab {
+	color: #fff;
+	display: inline-block;
+	width: 140px;
+	height: 60px;
+	background-color: #000;
+	text-align: center;
+	margin-right: -4px;
+}
+
+.tab a{
+	line-height: 70px;
+}
+
+.article {
+	color: #fff;
+	padding: 20px;
+    min-height:560px;
+    background-color: #000;
+}
+
+#side-nav{ 
+	clear: left;
+	float:left;
+    width:300px;
+}
+
+.hlinks {
+	width:300px;
+	height:50px;
+	font-size: 50px;
+	float: left;
+	background-color: #000;
+	color: #fff;
+	padding: 10px 0 0 0;
+	margin-bottom: 20px;
+}
+
+.vlinks {
+	width: 140px;
+	height: 500px;
+	margin-bottom: 20px;
+	float: left;
+	position: relative;
+}
+
+#gallery{
+	background-image: url(../media/gallery.jpg);
+	margin-left:20px;
+}
+
+#gallery:hover{
+	background-image: url(../media/gallery_hover.jpg);
+}
+
+#profiles{
+	background-image: url(../media/profiles.jpg)
+}
+
+#profiles:hover{
+	background-image: url(../media/profiles_hover.jpg)
+}
+
+#buttons {
+	width: 620px;
+	height:50px;
+
+}
+#buttons div{
+	float:left;
+	text-align: center;
+	width:140px;
+	height:50px;
+	background-color: black;
+}
+#previous-button{
+	float:left;
+	margin-left: 199px;
+}
+#next-button{
+	margin-left: 1px;
+}
+/*#content{
+	background-color: #2b5683;
+	width:620px;
+	float:left;
+}*/
+
+#footer {
+	clear:both;
+	text-align: center;
+}
+#footer a, #footer p{
+	color:white;
+	line-height: 50%;
+}
+#contact{
+	font-size:15px;
+}
+#authors{
+	font-size:9px;
+}
