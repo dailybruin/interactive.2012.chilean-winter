@@ -1,0 +1,28 @@
+#slideshow {
+	position: relative;
+	float: left;
+	height: inherit;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+/**Images should be smaller than parent container**/
+#slideshow img {
+	height: 380px;
+	display: block;
+}
+
+#images {
+}
+
+#thumbnails {
+	float: left;
+	overflow-y: scroll;
+	height: inherit;
+}
+
+#thumbnails img{
+	display: block;
+	width: 100px;
+	margin: 5px;
+}
