@@ -1,3 +1,9 @@
+#mosaicContainer {
+	width: 480px;
+	height: inherit;
+	position: static;
+}
+
 .largecontainer {
 	background-color: #fff;
 	float: left;
@@ -6,11 +12,12 @@
 
 #mosaicTitle {
 	position: absolute;
-	background-color: blue;
 	bottom: 15px;
-	right: 15px;
-	text-align: right;
-	line-height: 150px;
+	left: 255px;
+	background-color: #2b5683;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
 }
 
 .tiles {
@@ -51,6 +58,7 @@
 
 .tiles:hover h3, .tiles:hover .vignette {
 	display: block;
+	cursor: pointer;
 }
 
 .tiles:hover .vignette_unactive {

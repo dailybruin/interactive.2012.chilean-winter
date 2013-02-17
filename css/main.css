@@ -302,6 +302,18 @@ header br {
 	z-index: 2;
 }
 
+.profile {
+	width: 500px;
+	height: 300px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -150px;
+	background-color: red;
+	z-index: 25;
+}
+
 #gallery .verticaltext{
 	background-image: url(../media/gallery.jpg);
 	z-index: 6;
