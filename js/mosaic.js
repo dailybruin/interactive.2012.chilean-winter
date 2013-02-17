@@ -94,12 +94,27 @@ function() {
 			break;
 		}
 		});**/
-
+	
 	$('.miniProfiles').click(function(e){
 		var name=$(this).attr('name');
 		$('#background').fadeIn(1000);
 		$('#profile').fadeIn(1000);
-		$("#ajax").load("profiles/" + name + ".html", function(){
+		var ajax_load = "<img class='ajax-load' src='media/ajax-loader.gif' alt='loading...' />";
+		$("#ajax").html(ajax_load).load("profiles/" + name + ".html", function(){
+		$('.definition').each(function(){
+			$(this).hide();
+		});
+
+	    $('.define').hover(
+	    	function() {
+	    		var name = $(this).attr('name');
+	    		var position = $(this).position();
+	    		$('.definition[name="'+name+'"]').css({'left':position.left-180,'top':position.top+25}).fadeIn(500);
+	    	},
+	    	function() {
+	    		$('.definition').hide();
+	    	}
+	    );
 		console.log("Clicked " + name);});
 		e.preventDefault();
 	});

@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    $.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+    };
+
+    $(['media/gallery_hover.jpg','profiles_hover.jpg']).preload();
+
     $('.hlinks').each(
         function()
         {

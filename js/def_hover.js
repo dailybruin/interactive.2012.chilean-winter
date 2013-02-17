@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$(this).hide();
 	});
 
-    $('a.define').hover(
+    $('.define').hover(
     	function() {
     		var name = $(this).attr('name');
     		var position = $(this).position();

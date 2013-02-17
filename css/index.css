@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/**end reset**/
+
 html, body {
 	font-family: 'open_baskerville_0.0.53normal';
 	height: 100%;
@@ -55,42 +57,26 @@ html, body {
 body {
 	background-image: url(../media/background.jpg);
 	background-size: contain;
-	background-position: 0 0 ;
+	background-position: 0 0;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: #2b5683;
 }
 
-a:link, a:visited {
-	text-decoration:none;
-	color:#2b5683;
-}
-a:hover {
-	color:#fff
-} 
-
-h1 /*Title of Article*/{
-	font-size:30px;
-	margin-left:50px;
-	margin-right:50px;
-	margin-bottom:20px;
+h1 
+{
+	font-size: 50px;
 }
 
-h2 /*Author of Article*/{
-	margin-left:50px;
-	margin-right:50px;
-	margin-bottom:20px;
+h2 {
+	font-size: 30px;
 }
-h2 a{
-	color:white;
+
+h3 {
+	font-size: 16px;
 }
-h3 /*side-nav-top*/{
-	text-align: right;
-	margin-bottom: 0px;
-	position: relative;
-	top: 8px;
-}
-h4{
+
+h4 {
 	margin-top:20px;
 	font-size: 20px;
 	text-decoration: none;
@@ -98,27 +84,21 @@ h4{
 }
 
 p {
-	padding-bottom:10px;
+	font-size: 16px;
+	margin-bottom:16px;
 	line-height:115%;
-
 }
+
+.italics {
+	font-style: italic;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#2b5683;
+} 
 
 br {
-	clear: both;
-}
-
-article img {
-	margin-left:50px;
-	margin-top:50px;
-	margin-bottom:30px;
-	width:520px;
-	height:340px;
-}
-
-header {
-	width: 940px;
-}
-header br {
 	clear: both;
 }
 
@@ -127,15 +107,22 @@ audio {
 	width: 260px;
 }
 
-#editorsnote{
-	margin: 10px 0 25px 0;
-	width: 100%;
+#main-container {
+	clear: both;
+	max-width:940px;
+	margin:0 auto 0 auto;
+	padding: 10px;
+}
+
+/** Header **/
+
+header {
+	width: 940px;
 }
 
 #dblogo {
 	float:left;
 }
-
 
 #title {
 	float: left;
@@ -145,11 +132,11 @@ audio {
     margin-top:35px;
     border-left: 2px solid #2b5683;
 }
-#main-container {
-	clear: both;
-	max-width:940px;
-	margin:0 auto 0 auto;
-	padding: 10px;
+
+#editorsnote{
+	margin: 10px 0 25px 0;
+	width: 100%;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
 }
 
 #main {
@@ -184,16 +171,23 @@ audio {
 .article {
 	width: 540px;
 	color: #fff;
-    min-height:490px;
+    min-height:540px;
     overflow-y: auto;
     background-color: #000;
     margin-bottom:20px;
     padding: 20px 40px 20px 40px;
 }
 
-#centerpiece {
+.article a:hover, .article a:active {
+	color:#2b5683;
+	border-bottom: 1px dotted #2b5683;
+}
+
+#centerpieces {
 	width: 100%;
 }
+
+/**Sidebar **/
 
 #side-nav{ 
 	clear: left;
@@ -216,7 +210,8 @@ audio {
 .hlinks {
 	width:300px;
 	height:50px;
-	font-size: 50px;
+	text-align: right;
+	line-height: 66px;
 	background-color: #000;
 	color: #2b5683;
 	padding: 10px 0 0 0;
@@ -252,7 +247,11 @@ audio {
 	position: absolute;
 }
 
-.verticaltext h3 {
+.verticaltext:hover {
+	cursor: pointer;
+}
+
+.verticaltext h1 {
 	-webkit-transform:rotate(90deg);
 	-moz-transform:rotate(90deg);
 	-o-transform: rotate(90deg);
@@ -262,12 +261,8 @@ audio {
 	color: #2b5683;
 }
 
-.vlinks:hover h3 {
+.vlinks:hover h1 {
 	color: #fff;
-}
-
-.verticaltext:hover {
-	cursor: pointer;
 }
 
 .vcontent {
@@ -332,37 +327,6 @@ audio {
 	display: none;
 }
 
-#profile {
-	width: 800px;
-	height: 500px;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	margin-left: -420px;
-	margin-top: -270px;
-	background-color: #fff;
-	z-index: 20;
-	padding: 20px;
-	display: none;
-}
-
-.profileimg {
-	width: 390px;
-	height: 500px;
-	overflow: hidden;
-}
-
-.profileimg img {
-	width: inherit;
-}
-
-.profiletext {
-	float: right;
-	width: 390px;
-	height: 500px;
-	color: #000;
-}
-
 #gallery .verticaltext{
 	background-image: url(../media/gallery.jpg);
 	z-index: 6;
@@ -397,30 +361,70 @@ audio {
 	background-image: url(../media/profiles_hover.jpg);
 }
 
-#buttons {
-	width: 620px;
-	height:50px;
+/**AJAX**/
 
+#profile {
+	width: 800px;
+	height: 500px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -420px;
+	margin-top: -270px;
+	background-color: #fff;
+	z-index: 20;
+	padding: 20px;
+	display: none;
 }
-#buttons div{
-	float:left;
-	text-align: center;
-	width:140px;
-	height:50px;
-	background-color: black;
+
+.ajax-load {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -8px;
+	margin-left: -8px;
 }
-#previous-button{
-	float:left;
-	margin-left: 199px;
+
+.profileimg {
+	width: 390px;
+	height: 500px;
+	overflow: hidden;
 }
-#next-button{
-	margin-left: 1px;
+
+.profileimg img {
+	width: inherit;
 }
-/*#content{
-	background-color: #2b5683;
-	width:620px;
-	float:left;
-}*/
+
+.profiletext {
+	float: right;
+	text-align:left;
+	width: 370px;
+	height: 500px;
+	color: #000;
+	overflow-y: scroll;
+	padding: 0 10px 0 10px;
+}
+
+.define {
+	color: #2b5683;
+}
+
+.define:hover {
+	border-bottom: 1px dotted #2b5683;
+	cursor: pointer;
+}
+
+.definition {
+	display: none;
+	padding: 5px;
+	background-color: #000;
+	color: #fff;
+	width: 200px;
+	position: absolute;
+	box-shadow: -2px 2px 10px #696969;
+}
+
+/** footer **/
 
 #footer {
 	clear:both;

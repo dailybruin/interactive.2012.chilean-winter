@@ -6,12 +6,12 @@ function() {
     $('#thumbnails').html(imageString);
     var numImages = 0;
 
-    var parentHeight = $('#slideshow img').parents('#slideshowcontainer').height();
-    $('#slideshow #images').children().each(function(){
+    var parentHeight = $('#slideshowcontainer').height();
+    $('#slideshow #images').find('img').each(function(){
         imageHeight = $(this).height();
         marginHeight = Math.floor((parentHeight - imageHeight)/6);
         //console.log('marginheight' + marginHeight);
-        $(this).css({'margin-top':marginHeight,'margin-bottom':marginHeight});
+        $(this).parent('div').css({'margin-top':marginHeight,'margin-bottom':marginHeight});
     }).first().css('margin-top',marginHeight*3 +'px');
     var nextImage = marginHeight*2;
     $('#thumbnails').children().eq(0).css({'border':'5px solid #2b5683','margin':'0px'});
@@ -61,7 +61,7 @@ function() {
         }
     );**/
 
-    $('#thumbnails img, #slideshow img').click(
+    $('#thumbnails .imgcontainer, #slideshow .imgcontainer').click(
         function(e)
         {
             if (curPicIndex!=$(this).index())
@@ -70,9 +70,6 @@ function() {
                     curPicIndex = $(this).index();
                     $('#slideshow').animate({ scrollTop: (curPicIndex)*scrollLength }, 600);
                     $('#thumbnails').children().eq(curPicIndex).css({'border':'5px solid #2b5683','margin':'0px'});
-                    var thumbHeight = $('#thumbnails').children().first().height();
-                    var thumbMargin = parseInt($('#thumbnails').children().first().css('margin'));
-                    $('#thumbnails').animate({ scrollTop: (curPicIndex * (thumbHeight+thumbMargin)) }, 600);
             }
             e.preventDefault();
         }
