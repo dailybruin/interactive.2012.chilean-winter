@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
     };
 
-    $(['media/gallery_hover.jpg','profiles_hover.jpg']).preload();
+    $(['media/gallery_hover.jpg','media/profiles_hover.jpg']).preload();
 
     $('.hlinks').each(
         function()
