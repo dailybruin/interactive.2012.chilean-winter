@@ -11,9 +11,24 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
 		<link rel="stylesheet" type="text/css" href="css/mosaic.css" />
+
+		<script src="js/audiojs/audio.min.js"></script>
 	</head>
 
 	<body>
+
+		<div id="profile">
+			<div class="exitupper">x</div>
+			<div id="ajax"></div>
+		</div>
+
+
+		<div id="background">
+		</div>
+
+		<div id="backdrop">
+		</div>
+
 		<div id="main-container">
 			<header>
 				<a id="dblogo" href="http://www.dailybruin.com"><img src="media/db_logo.png" alt="Daily Bruin"/></a>
@@ -22,7 +37,17 @@
 			</header>
 
 			<div id="editorsnote">
-				<p><h4>Editor's Note</h4><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra augue a diam tincidunt facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut lorem tortor, congue quis iaculis sit amet, dictum ut lorem. Mauris elit nunc, mattis sed dictum nec, semper vitae justo. Nunc consequat mauris suscipit odio ullamcorper quis euismod turpis mollis. Nam ullamcorper sollicitudin arcu nec placerat. Nunc sit amet lectus quis quam sagittis dignissim in eu tortor. Donec nec neque sed felis bibendum consequat vitae at quam. Aenean eu scelerisque massa. Aenean accumsan euismod erat a feugiat. Vivamus sit amet tortor odio, ut dignissim ante. Nunc suscipit fringilla lectus non egestas. Vivamus ac diam massa. Pellentesque at risus eu leo imperdiet dignissim nec ut sapien. Mauris lobortis, leo eget consectetur consectetur, velit neque facilisis arcu, sed fringilla lacus arcu vitae metus.</p>
+				<h4>Editor's Note</h4><br/>
+				<p>Today the Daily Bruin is publishing a group of stories on the education protests that have been ongoing in Chile since 2011. The on-site reporting was made possible by the Bridget O’Brien Scholarship Foundation, now in its fifth year of funding student journalism at UCLA with global reach and local consequence.</p> 
+
+				<p>This year’s recipients, Suzy Strutner and Jenna Belhumeur, spent 15 days in Santiago, Chile, visiting schools and attending protest events. They conducted many interviews in Spanish that were translated into English by paid professionals.</p> 
+
+				<p>The stories and photos, as well as other multimedia content, are online at chileanwinter.dailybruin.com.</p> 
+
+				<p>As always, this year’s project is dedicated to the memory of the late O’Brien, a photojournalist and former photographer, writer and editor at the Daily Bruin.</p>  
+
+				<p>The Bruin would also like to dedicate this project to Jessica Lum, who was a former Daily Bruin photo editor and traveled to Thailand as one of the first recipients of the Bridget O’Brien Scholarship. Lum died this January at the age of 25 after a long battle with cancer.</p>  
+
 			</div>
 
 			<div id="side-nav">
@@ -31,53 +56,60 @@
 							<h1>Glossary &gt;</h1>
 						</div>
 						<div name="glossary" class="hexpand">
+							<script>
+								//Flash fallback for browsers that don't support <audio> or .mp3
+							  audiojs.events.ready(function() {
+							    var as = audiojs.createAll();
+							  });
+							</script>
+
 							<h4>Asamblea</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/asamblea.mp3"></audio>
+							<p>High school student protest groups meet biweekly in asambleas to discuss strategy and plan which university protest events they’ll be attending.</p>
+							<audio preload="auto" src="media/bob_audio/asamblea.mp3"></audio>
 							<h4>Cacerolazo</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/cacerolazo.mp3"></audio>
+							<p>This traditional form of protest, in which Chileans gather in a public square to bang pots with wooden spoons, originated during Salvador Allende’s presidency when industrial products were scarce. The name comes from cacerola, the Spanish word for “saucepan.”</p>
+							<audio preload="auto" src="media/bob_audio/cacerolazo.mp3"></audio>
 							<h4>Carabineros</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/carabineros.mp3"></audio>
+							<p>The Chilean national police force. Carabineros stand guard during most demonstrations and marches.</p>
+							<audio preload="auto" src="media/bob_audio/carabineros.mp3"></audio>
 							<h4>Desalojo</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/dsalojo.mp3"></audio>
+							<p>Police forces often attempt to take down tomas by surprise through desalojos, or evictions. The police storm campus in the middle of the night to arrest students who are sleeping at school.</p>
+							<audio preload="auto" src="media/bob_audio/desalojo.mp3"></audio>
 							<h4>El Pueblo</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/elpueblo.mp3"></audio>
+							<p>Chile has a deep sense of community. Students commonly refer to their classmates as brothers or sisters and to their fellow Chileans as the people of el pueblo, or “the village.”</p>
+							<audio preload="auto" src="media/bob_audio/elpueblo.mp3"></audio>
 							<h4>Encapuchados</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/encapuchados.mp3"></audio>
+							<p>These kinds of protesters, especially younger students, come to marches for the fun of roughhousing. The name, which means “hooded ones,” comes from how they cover their faces with bandanas. Encapuchados often taunt or throw rocks at the police.</p>
+							<audio preload="auto" src="media/bob_audio/encapuchados.mp3"></audio>
 							<h4>Filo</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/filo.mp3"></audio>
+							<p>This slang term commonly used by student protesters has multiple meanings, including: “Whatever.” “Who cares?” and “It’s all good.”</p>
+							<audio preload="auto" src="media/bob_audio/filo.mp3"></audio>
 							<h4>Marcha</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/marcha.mp3"></audio>
+							<p>At their largest, marches involve hundreds of thousands of Chilean students, parents and workers. Protesters brandish signs, play drums and chant during the festive, hours-long parades.</p>
+							<audio preload="auto" src="media/bob_audio/marcha.mp3"></audio>
 							<h4>Municipio</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/municipio.mp3"></audio>
+							<p>Dictator Augusto Pinochet, who led Chile from 1973 to 1990, placed control of the education system in the hands of municipios, or local districts, instead of the central state. Pinochet’s reform made schooling expensive, complicating life for those seeking a quality education.</p>
+							<audio preload="auto" src="media/bob_audio/municipio.mp3"></audio>
 							<h4>Paro</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/paro.mp3"></audio>
+							<p>When the majority of a university’s students vote to protest by halting classes, the campus is said to be on strike, or en paro. Paros have lasted days, weeks and months.</p>
+							<audio preload="auto" src="media/bob_audio/paro.mp3"></audio>
 							<h4>Toma</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/toma.mp3"></audio>
-							<h4>Velaton</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/velaton.mp3"></audio>
+							<p>Perhaps the movement’s most iconic display of discontent, a toma involves disgruntled students taking over their campuses, piling desks and chairs up high against the front gates. Classes can’t take place during a toma because students live and sleep in the school buildings.</p>
+							<audio preload="auto" src="media/bob_audio/toma.mp3"></audio>
+							<h4>Velat&Oacute;n</h4>
+							<p>This candlelit evening procession is a somber version of daytime marches. Students have hosted velatones to mourn the “death of education.” At least one student protester’s death has been commemorated with a velatón. The word comes from the Spanish word vela, meaning “candle.”</p>
+							<audio preload="auto" src="media/bob_audio/velaton.mp3"></audio>
 							<h4>Votaci&Oacute;n</h4>
-							<p>Translation Here</p>
-							<audio preload="auto" controls="controls" src="media/bob_audio/votacion.mp3"></audio>
+							<p>When a campus is en toma, student leaders call a vote every few days to ensure that the student body still supports the takeover. If students vote to discontinue the toma, it ends.</p>
+							<audio preload="auto" src="media/bob_audio/votacion.mp3"></audio>
 						</div>
 					
 						<div class="hlinks" id="reflections">
 							<h1>Reflections &gt;</h1>
 						</div>
 						<div name="reflections" class="hexpand">
-							<p>EDIT: Link to Suzy's Column</p>
-							<p>EDIT: Link to Jenna's Column</p>
+							<p><a href="suzy.html">Tiny hands putting protests in larger perspectives</a></p>
+							<p><a href="jenna.html">Unveiling individual faces of protest</a></p>
 						</div>
 				</div>
 
@@ -89,63 +121,99 @@
 								<div id="slideshow">
 									<div id="images">
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_8152.jpg"/>
+											<img src="media/gallery/DSC_6528.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												Students gather outside the University of Chile’s administration building during a lockdown. For nearly a month in summer 2012, the school was en toma, or taken over, by its students.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_7543.jpg"/>
+											<img src="media/gallery/DSC_6537.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												At Instituto Nacional, a middle school next to the University of Chile, protesters posted police citations on the campus gates. The citations ordered students to evacuate the campus after they staged a campus takeover in late August. 
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_8054.jpg"/>
+											<img src="media/gallery/DSC_6737.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												Noam Titelman, president of a student protest group at Santiago’s Pontifical Catholic University, talks to press at a demonstration on Aug. 22. The event, a family bike ride to protest education inequality, drew hundreds of participants.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_7664.jpg"/>
+											<img src="media/gallery/DSC_6804.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												Protesters ride bikes down the streets of Santiago on a rainy August night.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_7402.jpg"/>
+											<img src="media/gallery/DSC_7216.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												A protester bangs on a pot outside a metro stop in the center of Santiago. The popular form of protest, called a cacerolazo, originated during Salvador Allende’s presidency, when industrial products and food were scarce.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_7059.jpg"/>
+											<img src="media/gallery/DSC_7257.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												A protester stands outside the University of Chile administration building with a sign that reads, “No more repression against workers and students: Down with the Hinzpeter law!” The law, supported by Chilean Defense Minister Rodrigo Hinzpeter, proposed stricter punishments for student protesters.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_7046.jpg"/>
+											<img src="media/gallery/DSC_7440.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												Demonstrators march during a memorial for Manuel Gutierrez, a high school student who died during a protest. 
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_6677.jpg"/>
+											<img src="media/gallery/DSC_7599.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												Chilean police look on during a march to commemorate the anniversary of the death Manuel Gutierrez. Witnesses said they saw police shoot the 16-year-old high school student at a strike in Macul, just outside Santiago.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_6593.jpg"/>
+											<img src="media/gallery/DSC_7630.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												A student from the University of Chile blows a whistle to start the cueca, Chile’s national dance, during a march. In addition to chanting and flag waving, student marches typically include performances from university dance troupes.
 											</div>
 										</div>
 										<div class="imgcontainer">
-											<img src="media/gallery/DSC_7945.jpg"/>
+											<img src="media/gallery/DSC_7700.jpg"/>
 											<div class="imgcaption">
-												EDIT: Caption goes here.
+												Protesters stop traffic with a sign reading “Justice for Manuel.”
+											</div>
+										</div>
+										<div class="imgcontainer">
+											<img src="media/gallery/DSC_7897.jpg"/>
+											<div class="imgcaption">
+												At a march for education on Aug. 28, a University of Chile student raises a sign reading, “My mom gave me permission.” In Chile, parents and siblings often march alongside students.
+											</div>
+										</div>
+										<div class="imgcontainer">
+											<img src="media/gallery/DSC_7992.jpg"/>
+											<div class="imgcaption">
+												Construction workers pause to take in the sight of about 150,000 protesters marching down Santiago’s main thoroughfare. The march, held in late August, was the biggest of the semester.
+											</div>
+										</div>
+										<div class="imgcontainer">
+											<img src="media/gallery/DSC_8071.jpg"/>
+											<div class="imgcaption">
+												Hooded high school students guard their campus after staging a takeover during a march. To enter a school and break up a lockdown, police need a warrant that can take up to two weeks to secure.
+											</div>
+										</div>
+										<div class="imgcontainer">
+											<img src="media/gallery/DSC_8112.jpg"/>
+											<div class="imgcaption">
+												Protesters watch as a cloud of tear gas chugs down the street after a march. Police often use the gas and water cannons to break up lingering protesters.
+											</div>
+										</div>
+										<div class="imgcontainer">
+											<img src="media/gallery/DSC_8146.jpg"/>
+											<div class="imgcaption">
+												A student breathes into a gas mask during a march. Protesters wear the gear to combat the effects of the tear gas used to disperse crowds.
+											</div>
+										</div>
+										<div class="imgcontainer">
+											<img src="media/gallery/DSC_8166.jpg"/>
+											<div class="imgcaption">
+												A pair of protesters wipe their eyes as the effects of tear gas wear off.
 											</div>
 										</div>
 									</div>
@@ -212,54 +280,237 @@
 			</div><!--side-nav-->
 
 			<div id="main">
+				<div class="articleimg" id="aimg1">
+					<img src="media/gallery/DSC_8093.jpg"/>
+				</div>
+				<div class="articleimg" id="aimg1">
+					<img src="media/gallery/DSC_7059.jpg"/>
+				</div>
+				<div class="articleimg" id="aimg1">
+					<img src="media/gallery/uczombies.jpg"/>
+				</div>
+				<div class="articleimg" id="aimg1">
+					<img src="media/gallery/DSC_8152.jpg"/>
+				</div>
+				<br/><br/>
 				<ul class="tabs">
-					<li class="tab" id="tab1"><a href="#">Tab 1 &nbsp; &gt;</a></li>
-					<li class="tab" id="tab2"><a href="#">Tab 2 &nbsp; &gt;</a></li>
-					<li class="tab" id="tab3"><a href="#">Tab 3 &nbsp; &gt;</a></li>
-					<li class="tab" id="tab4"><a href="#">Tab 4 &nbsp; &gt;</a></li>
+					<li class="tab activetab" id="tab1"><a href="#">Lighting the spark</a></li>
+					<li class="tab" id="tab2"><a href="#">A gathering storm</a></li>
+					<li class="tab" id="tab3"><a href="#">UC takes cues</a></li>
+					<li class="tab" id="tab4"><a href="#">A day of reckoning</a></li>
 				</ul>
 
 				<div class="article" id="article1">
-					<img class="centerpieces" src="media/gallery/DSC_8093.jpg"/>
-					<br/><br/>
-					<p>SANTIAGO, CHILE — Few stuck around to see the end of the march. </p>
+					<p>SANTIAGO, CHILE — Few stuck around to see the end of the march.</p>
 
 					<p>The streets were slick with the spray of the water cannons police had used to break up groups of lingering students. Gas filled alleyways and inflamed tear ducts. It was cold.</p>
-					 
-					<p>But some rebellious high school students, or encapuchados, weren’t fazed. At about 2 p.m., the small crowd of marchers that were left passed by Liceo Insuco 2, a high school. </p>
+
+					<p>But some rebellious high school students, or encapuchados, weren’t fazed. At about 2 p.m., the small crowd of marchers that were left passed by Liceo Insuco 2, a high school.</p>
 
 					<p>About 25 of the school’s students, faces disguised with bandanas and hoods, suddenly split from the marchers and broke into the campus. They hauled desks and chairs from inside their classrooms and piled them high against the campus’ front gates. They whacked at school yard walls with axes. They waved Chilean flags.</p>
-					 
-					<p>Almost instantly, they had started a toma, the student movement’s signature protest tactic: a takeover of school buildings in the capital city of Santiago in Chile. </p>
+
+					<p>Almost instantly, they had started a toma, the student movement’s signature protest tactic: a takeover of school buildings in the capital city of Santiago in Chile.</p>
 
 					<p>And just like that, school went on a hiatus for a month.</p>
 
-					<p>In August, the Daily Bruin spent 15 days in Santiago, Chile to report on how the protest movement to transform the country’s educational system has become a central thread in Chilean society. The University of California has seen protests flare in response to deep state budget cuts and steep tuition hikes, but in Chile, tens of thousands of marchers flood the streets with a zeal inspired by the country’s history of repression and dictatorship. </p>
+					<p>In August, the Daily Bruin spent 15 days in Santiago, Chile,  to report on how the protest movement to transform the country’s educational system has become a central thread in Chilean society. The University of California has seen protests flare in response to deep state budget cuts and steep tuition hikes, but in Chile, tens of thousands of marchers flood the streets with a zeal inspired by the country’s history of repression and dictatorship.</p>
 
-					<p>Starting in May 2011, students staged months of frequent marches and school takeovers in what has become known as the “Chilean Winter,” a name modeled after the turbulent uprisings of the Arab Spring. </p>
+					<p>Starting in May 2011, students staged months of frequent marches and school takeovers in what has become known as the “Chilean Winter,” a name modeled after the turbulent uprisings of the Arab Spring.</p>
 
-					<p>Simmering tension over the education system centered in Santiago lit the spark for the movement. A spate of violent bullying incidents in Santiago schools, coupled with a Congressional decision to fund expensive power plants with money critics said could have gone toward education, led to calls for reform that escalated into full-blown protests with a unified set of demands. 
-					<a href="http://en.mercopress.com/2012/06/01/lack-of-political-support-freezes-chile-s-biggest-multi-dam-project">http://en.mercopress.com/2012/06/01/lack-of-political-support-freezes-chile-s-biggest-multi-dam-project</a></p>
+					<p>Simmering tension over the education system centered in Santiago lit the spark for the movement. A spate of violent bullying incidents in Santiago schools – coupled with a Congressional decision to fund expensive power plants with money critics said could have gone toward education – led to calls for reform that escalated into full-blown protests with a unified set of demands.</p>
 
-					<p>Some of protesters’ main demands are free education and constitutional changes that would make it easier to pass laws that benefit the school system. In neighboring countries Argentina and Brazil, public universities are entirely funded by the government, keeping tuition free for students. </p>
+
+					<p>Some of protesters’ main demands are free education and constitutional changes that would make it easier to pass laws that benefit the school system. In neighboring countries Argentina and Brazil, public universities are entirely funded by the government, keeping tuition free for students.</p>
 
 					<p>The movement, well-documented by the press, has influenced protesters a hemisphere away. At the University of California, organizers opposed to tuition increases have attempted to mirror Chilean organizational structures and demonstration tactics. Success in rallying students to protests has been mixed.</p>
 
-					<p>In Chile, after months of steady marches, popular support for the student movement is now waning. Public disapproval of violence and disruption has accompanied the failure of the movement to achieve its large-scale goals, said Federico Huneeus, former president of Chile’s leading student organization and a current economics professor at the University of Chile last fall. A year and a half after the beginning of the movement, marches are happening less frequently, and gaining less media attention. </p>
+					<p>In Chile, after months of steady marches, popular support for the student movement is now waning. Public disapproval of violence and disruption has accompanied the failure of the movement to achieve its large-scale goals, said Federico Huneeus, former president of Chile’s leading student organization and a current economics professor at the University of Chile, last fall. A year and a half after the beginning of the movement, marches are happening less frequently, and gaining less media attention.
 
-					<p>“We are obviously in a different stage this year,” Camila Vallejo, a charismatic University of Chile alumna that helped found the movement, told Chilean newspaper La Tercera last September. “I would be wrong to say that the movement has the ability to mobilize that it did last year, because that isn’t so. <a href="http://www.santiagotimes.cl/opinion/special-reports/25177-chiles-student-movement-struggles-to-find-footing-in-2012">http://www.santiagotimes.cl/opinion/special-reports/25177-chiles-student-movement-struggles-to-find-footing-in-2012 </a> </p>
+					<p>“We are obviously in a different stage this year,” Camila Vallejo, a University of Chile alumna that helped found the movement, told Chilean newspaper La Tercera last September. “I would be wrong to say that the movement has the ability to mobilize that it did last year, because that isn’t so.”</p>
+
+					<p>A new crop of student leaders plans to continue marches and demonstrations in 2013, but whether the movement can achieve its goals remains an open question.</p>
+
+					<a href="#" class="nextsection">Continue Reading &gt;&gt;</a>
 				</div>
 
 				<div class="article" id="article2">
-					EDIT: Need Part 2 of Main Article
+					<p>Like most protests, the one in late August started slow. It was at the pace of a walk, a swarming mass of people talking and laughing together on the streets of Santiago.</p>
+
+					<p>A mother stopped at a street vendor to buy a hamburger for her elementary school son. Fathers toted toddlers and grandfathers brandished signs: “I support the student movement.”</p>
+
+					<p>Some marchers wore white face paint while others sported costumes to add to the spectacle. One student had a balloon hat. Another dressed like Snow White. A group of younger girls walked in black shirts with matching ripped leggings.</p>
+
+					<p>Two university students hugged and chatted over the percussion that blared from a boom box. Nearby, their friend started a sing-song chant. Students around him joined in: “What the people need is free education!”</p>
+
+					<p>This was the culmination of weeks of planning. Organizers had branded the entire month as “Student August,” advertising marches, rallies and debates on social media sites. One Facebook group listed daily events and guidance for students if they were arrested.</p>
+
+					<p>The University of Chile, a state-funded, prestigious college that acts as an educational magnet for some of Santiago’s wealthiest, was at the epicenter of these coordination efforts. Almost every university in the Santiago region has a movement-minded student group, but the most famous is the University of Chile Student Federation, or FECH. Representatives from each university’s student group come together at meetings of CONFECH, the organization that serves as a forum for exchange and planning between schools. The bimonthly meetings take place around the country, in order to engage students from all parts of Chile.</p>
+
+					<p>A few days before the August march, Gabriel Boric, then-president of FECH, called for an assembly of students from the University of Chile. Seated at a long table at the front of an auditorium, he outlined for his peers what would happen on the day of the protest.</p>
+
+					<p>For updates, check Facebook and Twitter, Boric told the assembly.</p>
+
+					<p>Social media is a new development, but here, protests are part of the social fabric. Demonstrations span across society – college students, high school students, parents, siblings and sympathetic citizens – and across generations.</p>
+
+					<p>Under Augusto Pinochet, a dictator who took control of Chile via a bloody coup in 1973, Chileans protested policies that liberalized the country’s economy and opened it up to free trade. These policies left many Chilean urban workers without jobs and further polarized Chile’s income distribution, said Barbara Geddes, a UCLA political science professor who specializes in Latin American politics.</p>
+
+					<p>Chileans found creative ways to express their political discontent during the nearly three decades of Pinochet’s rule, including music concerts, art demonstrations and parades, Geddes said.</p>
+
+					<p>In 2011, the protest culture sparked by Pinochet was resurrected by the latest generation of Chileans. They have taken up their parents’ and grandparents’ fight for economic equality in light of the problems they say exist: high university fees, a system that gives an edge to wealthier students, and private universities that allegedly turn illegal profits from student fees.</p>
+
+					<p>After the August march, Benji a la Luz, a student studying abroad in Chile, met up with a group of students and parents for a traditional pot-banging, or cacerolazo, outside a metro station. The act is a remnant from Chile’s earlier eras, when food shortages were common in poor neighborhoods and people took to the streets to bang pots.</p>
+
+					<p>A la Luz was born in Chile but raised in Florida. His parents left Chile 20 years ago after struggling with poverty under the dictatorship. Times are better now.</p>
+
+					<p>“I can afford my education, but that means it’s my duty to fight for those who can’t,” a la Luz said in English. “My mom’s generation started the work. We’re finishing it.”</p>
+
+					<a href="#" class="nextsection">Continue Reading &gt;&gt;</a>
 				</div>
 
 				<div class="article" id="article3">
-					EDIT: Need Part 3 of Main Article
+					<p>With everyday students as its leaders and a list of clear demands, the Chilean Winter captured a worldwide audience. Eventually, the tremors reached California.</p>
+
+					<p>At a University of California Board of Regents meeting last July, Beezer de Martelly, an ethnomusicology graduate student at UC Berkeley, stood on her chair in the area where visitors were seated for public comment.</p>
+
+					<p>Wearing white face paint and a torn T-shirt, she cued Michael Jackson’s “Thriller” and began a set of choreographed dance moves.</p>
+
+					<p>De Martelly’s actions were a nod to a tactic seen in the Chilean Winter. In 2011, hundreds of students in Santiago stormed a park, sporting full-body zombie costumes to deplore what they called the “death of education.”</p>
+
+					<p>Their perfectly synchronized dance to “Thriller” went viral on <a href="http://www.youtube.com/watch?v=sVjqtxGr1nY">YouTube</a>. It has been viewed by about 65,000 people around the world.</p>
+
+					<p>Within the UC, the rallying cry among protesters centered on fast-rising tuition rates between 2007 and 2012.</p>
+
+					<p>In 2009, hundreds of students rallied at UCLA on the steps of Covel Commons when the UC regents voted to raise tuition 30 percent during a meeting there. Two weeks earlier, then-governor Arnold Schwarzenegger signed a state budget that cut the UC’s funding by $650 million.</p>
+
+					<p>UC officials have said that, even with hikes, tuition is still affordable. And increases in tuition have been accompanied by increases in financial aid for students in lower income brackets.</p>
+
+					<p>In 2011, students’ demands to stop tuition hikes and restore state funding to the UC were united with the international Occupy movement. Thousands of people flooded into Sacramento for an “Occupy the Capitol” rally in March.</p>
+
+					<p>For the most part, though, UC-wide protests in recent years have been infrequent, and draw an attendance of only a couple dozen.</p>
+
+					<p>Recently, organizers have been looking to Chile for inspiration. In addition to creative cues, like the idea for the zombie dance, UC student activists are also making efforts to start a formal organization where protesters from many California universities can come together – an organization like the Chilean CONFECH.</p>
+
+					<p>Since the Occupy UCLA group disbanded in fall 2011, UCLA protesters have joined with the United Auto Workers union and are reaching out to protest groups around the state through channels such as Facebook, said Seth Newmeyer, a third-year English student at UCLA who demonstrated during at least six UC regents meetings since 2011.</p>
+
+					<p>“Organizing students is our main problem,” Newmeyer said. “The reason Chile is so great at protesting is they have infrastructure in the culture of student unions being a main force in controlling the school.”</p>
+
+					<p>Within the UC system, Students for a Democratic University – a protest group based at UC Berkeley – is spearheading the attempt to create a single coalition that unites student groups from all UC campuses. Students for a Democratic University became the main organizing hub after the UC Berkeley Occupy movement fell dormant by fall 2012, said William Skewes Cox, a recent UC Berkeley graduate who was part of the transition from Occupy to the new organization.</p>
+
+					<p>If the fragmented groups from each UC campus could come together in a single meeting place, statewide marches and strikes like the ones in Chile could be feasible, said Maggie Hardy, a member of Students for a Democratic University and a second-year political science student at UC Berkeley.</p>
+
+					<p>So far, statewide conferences, which included UCLA students, have been held to discuss the structure of the group, and a series of forums will take place in spring to recruit new members to Students for a Democratic University at UC Berkeley. Other than the meetings, no demonstrations have been planned for the year, Hardy said.</p>
+
+					<p>With the freeze on UC tuition that is currently in place, protesters are going through a transition phase, during which they are able to pour more energy into organizing into a statewide coalition, Hardy said.</p>
+
+					<p>In November, California voters passed Proposition 30, which raised taxes and prevented millions in cuts to the UC. With the passage of Proposition 30, the state also gave the UC $125 million on the condition that the University not raise tuition this school year. The governor's proposed budget for next year includes an additional $125 million for UCs.</p>
+
+					<p>Under these conditions, the regents do not plan to raise tuition for the 2013-2014 academic year, said Steve Montiel, a UC spokesman. But nothing is certain, as the budget will go through a series of revisions before it is passed in the summer.</p>
+
+					<p>With Proposition 30 in place and tuition looking to remain stable for at least the next school year, protesters have also changed their aim from stopping tuition hikes to promoting tuition rollbacks, Hardy said. Both Newmeyer and Hardy said most of the students they protest with think universities should not charge tuition at all.</p>
+
+					<p>But Students for a Democratic University’s development has been hampered by disagreement over whether to install leadership in a group that currently has no officers, Armstrong added.</p>
+
+					<p>That’s one key difference between the UC and Chile. While Chile’s main student group has a president to act as leader and media spokesperson, the new UC organization is wary of picking out a singular figurehead, said Amanda Armstrong, a graduate student in rhetoric at UC Berkeley who is a member of Students for a Democratic University.</p>
+
+					<p>“We’re concerned about having a leader and a hierarchy,” she said. “We want to be able to deliberate.”</p>
+
+					<p>Separate from protest groups, the University of California Student Association – an organization comprised of members of each UC’s student government – regularly meets with state officials to discuss solutions for a lack of education funding, said Lana El-Farra, external vice president of the Undergraduate Students Association Council at UCLA.</p>
+
+					<p>Joelle Gamble, a UCLA alumna who served as external vice president of the Undergraduate Students Association Council last year, has visited the Capitol for these discussions.</p>
+
+					<p>She said she thinks students who lobby in California have the same passion as those who march in Chile – they just show it in a less public way.</p>
+
+					<p>“Just because we don’t have a protest culture in this country, doesn’t mean people don’t care,” she said. “The only time it’s hard for us to rally people is when they don’t see immediate change.”</p>
+
+					<a href="#" class="nextsection">Continue Reading &gt;&gt;</a>
 				</div>
 
 				<div class="article" id="article4">
-					EDIT: Need Part 4 of Main Article
+					<p>Though steeped in protest culture, Chilean student activists are also faced with the problem of maintaining momentum after nearly two years of demonstrations.</p>
+
+					<p>During the Daily Bruin’s 15 days in Chile, student protesters conducted two days of marches. First, high school students organized a day of action with nearly a dozen local marches in Santiago’s various neighborhoods. The second march, held in late August, was designed as a deliberate show of vitality: marches weren’t happening with the almost-weekly frequency as at the height of the Chilean Winter one year earlier.</p>
+
+					<p>It was an opportunity to show that the movement was still alive and well.</p>
+
+					<p>Protesters have seen small political gains. In its 2012 budget, Chile’s Congress included an increase in higher education spending. The increase came in response to public pressure generated by the movement, Huneeus said. It also introduced a bill that would lower student loan rates and passed a business tax increase that is projected to generate $1.23 billion for education.</p>
+
+					<p>Schools that had been found to bribe accreditation agencies were shut down by the government. Pearson, an American-based education services company, was called in to evaluate the national college entrance test. The governing board of Chile’s top colleges announced that test scores will not be the only factor considered in the university admissions process. As of fall 2012, universities will also evaluate class rank, comparing students’ performances to those of other students from similar economic backgrounds, a move proponents say will give admissions officers a more holistic view of the applicants.</p>
+
+					<p>Harald Beyer, Chile’s minister of education, also introduced a bill that would create stricter standards for the accreditation of universities and establish a National Accreditation Agency.</p>
+
+					<p>The Chilean minister of education and a representative from the Council of Rectors, the governing body of Chilean universities, could not be reached for comment after multiple emails.</p>
+
+					<p>“Certainly we do not believe that reforms to the higher education system end here because this is an ongoing process,” said Beyer in a January statement about the accreditation bill released by the Ministry of Education in Spanish.</p>
+
+					<p>Beyer, who assumed his position in December 2011, has been an advocate in changing aspects of the higher education system.</p>
+
+					<p>But the core demands of the movement – free education and constitutional change – are not much closer to being achieved than when the protests began in 2011.</p>
+
+					<p>Additionally, the movement’s common tactic of shutting down schools – a tactic that has no parallel in the U.S. – has received public backlash.</p>
+
+					<p>Students at the University of Chile lost an entire year of school in 2011 before protesters decided to focus more of their energy on marches. While most lockouts last a few days, the University of Chile remained locked out for almost seven months, from May until December 2011. All aspects of school were on hold – no class, no grades and no tuition.</p>
+
+					<p>Student protesters slept, ate, played guitar and chatted in abandoned classrooms and offices. So many students refused to attend class that professors stopped showing up to teach.</p>
+
+					<p>During normal strikes, the University of Chile requires teachers to continue their research on campus even without students showing up for class, said Zafiro Fleming, a spokesman for the university. But when the lockdown happened, some teachers even took part in the protest, helping to orchestrate marches and lecturing to the public in plazas.</p>
+
+					<p>“Not many people on campus wanted to go to classes,” Fleming said. “There really was not much (the University) could do.”</p>
+
+					<p>Classes did not resume until the following school year.</p>
+
+					<p>Franco Soto, a high school student, is among the students, professors and parents who disagree with the effectiveness of the toma. Soto said he thinks marches are a better method for protest than tomas.</p>
+
+					<p>“In my opinion, the toma doesn’t do anything but cause us to miss class,” Soto said. “There are better ways to make changes.”</p>
+
+					<p>During lockdowns, protesters camping out in university buildings send students outside to solicit donations from passersby on the street. They use the funds to buy food and supplies for homemade signs and banners.</p>
+
+					<p>Students who don’t participate in the occupation may pick up part-time jobs or stay home and wait for classes to resume.</p>
+
+					<p>Since the fall of 2012, organizers have decided to turn away from the toma and focus on marches as the central tactic in order to avoid losing credit for another year of classes. But a new line of criticism has opened up surrounding the level of violence at some marches – from both protesters and police.</p>
+
+					<p>After a few hours of peaceful pageantry, the carabineros, or Chilean police, broke up the August march with tear gas and water cannons.</p>
+
+					<p>Miguel Ramirez, a student at Santiago high school Miguel Rafael Prado, outran the chemical fog in August and ducked into the doorway of a convenience store with his girlfriend. The pair sat huddled on the stoop, sniffling.</p>
+
+					<p>“(The gas) is horrible,” Ramirez said afterward. “You can’t breathe, your eyes hurt.”</p>
+
+					<p>“It’s worth it though, because our system is totally unfair.”</p>
+
+					<p>Chilean police use tactics such as tear gas to maintain public order at marches, said Jose Mora, a spokesman for the carabineros, in a phone interview in October.</p>
+
+					<p>Disruptions at marches usually come from anarchist groups who are not students, but sometimes they are caused by encapuchados, or bands of rowdy younger students who wear hoods and throw rocks, Mora said. When the encapuchados or other groups of non-students cause disorder, the police are forced to disband them, he said.</p>
+
+					<p>“We use gas and rainwater – we choose the methods that have the least intense impact,” Mora said.</p>
+
+					<p>Such face-offs between police and protesters have been extensively documented by the media. When the movement entered its second year, members of the public increasingly expressed disapproval of violent clashes. Sixty-two percent of the Chilean population said they disapproved of the protesters’ methods, according to a September 2012 poll by Chilean public opinion research company Adimark.</p>
+
+					<p>“Not as many people support the movement as (in 2011),” Huneeus said in an interview last fall. “It’s a combination of time and the press focusing somewhere else.”</p>
+
+					<p>University of Chile student Jennifer Mella has never been to a march. She said she does not think marches should be a part of the protesters’ repertoire because of the public disruption they cause.</p>
+
+					<p>“Marches are not effective,” Mella said. “People have a right to have a peaceful life and to not be worried every time a march is announced.”</p>
+
+					<p>In a January interview, the newly elected president of the FECH, Andres Fielbaum, defended marches as an effective way to transmit the movement’s message.</p>
+
+					<p>“If today all of Chile recognizes that there are general problems with education, it’s thanks to the marches,” Fielbaum said.</p>
+
+					<p>He acknowledged, however, that the movement does not carry as much force as it did a year ago. The most recent march took place in late October, when high schoolers took to the streets to promote call for a boycott of regional elections. They claimed the government does not listen to the interests of students, whether they vote or not.</p>
+
+					<p>Marches should be coupled with other forms of protest, like speeches, Fielbaum said. He added that large-scale gatherings of people are the best way to draw attention to the movement’s demands for free education and a cleanup of universities that allegedly turn illegal profits.</p>
+
+					<p>“All movements have some moments of more direct force and some moments of recovery,” he said.</p>
+
+					<p>He said students still have a will to protest, but it is hard to predict what their efforts will look like in the coming year. Leaders of regional student groups will ultimately determine the sizes and frequencies of marches, he added.</p>
+
+					<p>In the coming year, local student groups will plan their own activities alongside the larger-scale demonstrations that the FECH plans, Fielbaum said.</p>
+
+					<p>The movement’s declared objective to change the constitution seems to be a shot in the dark. Not affiliated with any one political party, the students would have a better chance at achieving piecemeal legal reforms to the education system with political backing, said Huneeus, the economics professor at the University of Chile. With national elections approaching in 2013, it is unclear how student activists will be involved.</p>
+
+					<p>With challenges ahead, experts say that putting the issues in the spotlight may be the movement’s greatest achievement so far.</p>
+
+					<p>“Yes, (protesters are) not changing the policy of the government, but they are changing the thoughts of our people,” Huneeus said.  “The country has changed thanks to the movement.</p>
+
+					<p>“We don’t know how to solve our problems, but at least we’re aware of them.”</p>
 				</div>
 			</div><!--main-->
 			<br/>
@@ -268,25 +519,10 @@
 		<div id="footer">
 				<p id="contact"><a href="http://dailybruin.com/contact-us/">Contact us</a> | <a href="http://www.rememberingbridget.com/">Bridget O'Brien Scholarship Foundation</a></p>
 				<p id="authors">Site created by <a href="mailto:cchan@media.ucla.edu">Calvin Chan</a> and <a href="mailto:jyang@media.ucla.edu">Jimmy Yang</a>, Daily Bruin Contributors</p>
-		</div>
-
-
-
-
-		<div id="profile">
-			<div class="exitupper">x</div>
-			<div id="ajax"></div>
-		</div>
-
-
-		<div id="background">
-		</div>
-
-		<div id="backdrop">
+				<br/>
 		</div>
 
 		<div class="definition" name="toma">Definition of Toma</div>
-
 		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
 		<script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
 		<script src="js/tab.js"type="text/javascript"></script>

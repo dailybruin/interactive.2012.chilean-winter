@@ -61,6 +61,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-color: #2b5683;
+	padding-bottom: 40px;
 }
 
 h1 
@@ -79,6 +80,7 @@ h3 {
 h4 {
 	margin-top:20px;
 	font-size: 20px;
+	margin-bottom:16px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -102,7 +104,7 @@ br {
 	clear: both;
 }
 
-audio {
+.audiojs {
 	display: block;
 	width: 260px;
 }
@@ -149,23 +151,42 @@ header {
 }
 
 .tabs {
-	width: 100%;
+	width: 600px;
+	height: 59px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-bottom: 1px solid #2b5683;
 }
 
 .tab {
 	color: #fff;
 	float: left;
-	width: 153px;
-	height: 58px;
+	width: 128px;
+	height: 39px;
 	background-color: #000;
-	text-align: right;
-	border: 1px solid #fff;
-	line-height: 105px;
+	text-align: center;
+	border-bottom: 1px solid #2b5683;
+	padding: 10px;
 }
 
 .tab a{
-	line-height: 30px;
-	font-size: 30px;
+	font-size: 20px;
+}
+
+.tab a:hover, .tab a:active {
+	color: #fff;
+}
+
+.activetab {
+	border-bottom: none;
+	border-top: 1px solid #2b5683;
+	border-left: 1px solid #2b5683;
+	border-right: 1px solid #2b5683;
+	width: 133px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .article {
@@ -178,14 +199,21 @@ header {
     padding: 20px 40px 20px 40px;
 }
 
+.articleimg {
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.articleimg img {
+	width: 540px;
+}
+
 .article a:hover, .article a:active {
 	color:#2b5683;
 	border-bottom: 1px dotted #2b5683;
 }
 
-#centerpieces {
-	width: 100%;
-}
 
 /**Sidebar **/
 
@@ -225,10 +253,14 @@ header {
 
 .hexpand {
 	background-color: #fff;
-	padding: 10px;
+	padding: 10px 10px 0 10px;
 	max-height: 350px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+.hexpand a:hover, .hexpand a:active {
+	border-bottom: 1px dotted #2b5683;
 }
 
 .vlinks {
@@ -409,14 +441,14 @@ header {
 	color: #2b5683;
 }
 
-.define:hover {
+.profiletext a:hover, .profiletext a:active, .define:hover {
 	border-bottom: 1px dotted #2b5683;
 	cursor: pointer;
 }
 
 .definition {
 	display: none;
-	padding: 5px;
+	padding: 10px;
 	background-color: #000;
 	color: #fff;
 	width: 200px;
@@ -427,17 +459,23 @@ header {
 /** footer **/
 
 #footer {
-	clear:both;
-	margin: 40px 0 10px 0;
+	margin: 40px 0 40px 0;
 	text-align: center;
 }
 #footer a, #footer p{
 	color:white;
 	line-height: 50%;
 }
+
+#footer a:hover, #footer a:active {
+	border-bottom: 1px dotted #fff;
+}
+
 #contact{
-	font-size:15px;
+	font-size:14px;
+	margin-bottom: 10px;
 }
 #authors{
-	font-size:9px;
+	font-size:12px;
+	margin-bottom: 10px;
 }
