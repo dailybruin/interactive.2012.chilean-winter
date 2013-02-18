@@ -55,7 +55,7 @@ html, body {
 }
 
 body {
-	background-image: url(../media/background.jpg);
+	background-image: url(../media/background.png);
 	background-size: contain;
 	background-position: 0 0;
 	background-attachment: fixed;
