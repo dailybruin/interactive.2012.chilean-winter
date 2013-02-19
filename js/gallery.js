@@ -4,6 +4,7 @@ function() {
     var imageString = $('#images').html();
     //console.log(imageString);
     $('#thumbnails').html(imageString);
+    $('#galleryvideo').append('<iframe style="position: absolute; top: 21px; left: 0; z-index: 30;" width="600" height="338" src="http://www.youtube.com/embed/738r-uIzYBY" frameborder="0" allowfullscreen></iframe>')
     var numImages = 0;
 
     var parentHeight = $('#slideshowcontainer').height();
