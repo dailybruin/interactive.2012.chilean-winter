@@ -189,6 +189,15 @@ header {
 	border-top-right-radius: 10px;
 }
 
+a.nextsection:link, a.nextsection:visited {
+	font-size: 20px;
+	color: #fff;
+}
+
+a.nextsection:hover, a.nextsection:active {
+	border-bottom: 1px #fff dotted;
+}
+
 .article {
 	width: 540px;
 	color: #fff;
