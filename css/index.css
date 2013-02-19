@@ -217,6 +217,18 @@ a.nextsection:hover, a.nextsection:active {
 .articleimg img {
 	width: 540px;
 }
+.articleimg p {
+	color:#fff;
+	text-align: left;
+	margin-top:5px;
+	margin-right:40px;
+	margin-left:40px;
+	font-size:12px;
+}
+.articleimg .credit{
+	font-size:10px;
+	text-align: right;
+}
 
 .article a:hover, .article a:active {
 	color:#2b5683;
@@ -450,6 +462,10 @@ a.nextsection:hover, a.nextsection:active {
 	color: #2b5683;
 }
 
+.imgcaption .define {
+	color: #fff;
+}
+
 .profiletext a:hover, .profiletext a:active, .define:hover {
 	border-bottom: 1px dotted #2b5683;
 	cursor: pointer;
@@ -463,6 +479,7 @@ a.nextsection:hover, a.nextsection:active {
 	width: 200px;
 	position: absolute;
 	box-shadow: -2px 2px 10px #696969;
+	z-index:30;
 }
 
 /** footer **/
