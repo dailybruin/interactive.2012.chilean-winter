@@ -213,7 +213,7 @@ a.nextsection:hover, a.nextsection:active {
 }
 
 .fb_iframe_widget {
-	margin: 40px;
+	margin: 0 40px 40px 40px;
 	width: 540px;
 }
 
