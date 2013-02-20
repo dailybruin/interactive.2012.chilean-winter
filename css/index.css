@@ -114,6 +114,10 @@ br {
 	clear: both;
 }
 
+.noclear {
+	clear: none;
+}
+
 .audiojs {
 	display: block;
 	width: 260px;
@@ -250,9 +254,10 @@ a.nextsection:hover, a.nextsection:active {
 }
 
 .mug img {
-	width:20%;
-	float:left;
-	margin-right:10px;
+	width:100px;
+	float:right;
+	margin-left:15px;
+	margin-bottom: 15px;
 }
 
 /**Sidebar **/
