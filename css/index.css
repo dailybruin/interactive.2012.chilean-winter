@@ -235,6 +235,7 @@ a.nextsection:hover, a.nextsection:active {
 
 .articleimg {
 	width: 100%;
+	margin-top: 40px;
 	text-align: center;
 }
 
