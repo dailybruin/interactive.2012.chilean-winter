@@ -10,7 +10,6 @@ $(document).ready(function(){
 		$('#main').children('.articleimg').hide();
 		$('#main').children('.article').eq(index).show();
 		$('#main').children('.articleimg').eq(index).show();
-		$(document).scrollTop(500);
 		e.preventDefault();
 	});
 
@@ -22,7 +21,7 @@ $(document).ready(function(){
 		$('#main').children('.articleimg').hide();
 		$('#main').children('.article').eq(curindex+1).show();
 		$('#main').children('.articleimg').eq(curindex+1).show();
-		$(document).scrollTop(500);
+		$(document).scrollTop(600);
 		//console.log(curindex);
 		e.preventDefault();
 	});
