@@ -212,7 +212,7 @@ a.nextsection:hover, a.nextsection:active {
 	border-bottom: 1px #fff dotted;
 }
 
-.fb-like {
+.fb_iframe_widget {
 	margin: 40px;
 	width: 540px;
 }
