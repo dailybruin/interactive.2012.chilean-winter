@@ -223,9 +223,10 @@ a.nextsection:hover, a.nextsection:active {
 	margin-top:5px;
 	margin-right:40px;
 	margin-left:40px;
+	font-size: 10px;
 }
 .articleimg .credit{
-	font-size:12px;
+	font-size:8px;
 	text-align: right;
 }
 
@@ -234,6 +235,11 @@ a.nextsection:hover, a.nextsection:active {
 	border-bottom: 1px dotted #2b5683;
 }
 
+.mug img {
+	width:20%;
+	float:left;
+	margin-right:10px;
+}
 
 /**Sidebar **/
 
