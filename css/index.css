@@ -95,6 +95,16 @@ p {
 	font-style: italic;
 }
 
+.floatleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.floatright {
+	float: right;
+	margin-left: 15px;
+}
+
 a:link, a:visited {
 	text-decoration:none;
 	color:#2b5683;
@@ -223,11 +233,15 @@ a.nextsection:hover, a.nextsection:active {
 	margin-top:5px;
 	margin-right:40px;
 	margin-left:40px;
-	font-size: 10px;
+	font-size: 12px;
 }
 .articleimg .credit{
-	font-size:8px;
+	font-size:12px;
 	text-align: right;
+}
+
+.article img {
+	width: 260px;
 }
 
 .article a:hover, .article a:active {
@@ -369,7 +383,7 @@ a.nextsection:hover, a.nextsection:active {
 }
 
 #profiles .vcontent {
-	width: 620px;
+	width: 480px;
 	left: 140px;
 	z-index: 2;
 }

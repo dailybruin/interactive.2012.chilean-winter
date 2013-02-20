@@ -13,11 +13,12 @@
 #mosaicTitle {
 	position: absolute;
 	bottom: 15px;
-	left: 255px;
+	left: 135px;
 	background-color: #2b5683;
 	color: #fff;
 	font-size: 50px;
-	text-align: center;
+	line-height: 186px;
+	text-align: right;
 }
 
 .tiles {

@@ -2,7 +2,7 @@ $(document).ready(
 function() {
 
 	var mosaicHeight = $('#mosaicContainer').height();
-	$('#mosaicTitle').css({'width':(2*mosaicHeight/4)-10,'height':mosaicHeight/4-10})
+	$('#mosaicTitle').css({'width':(3*mosaicHeight/4)-10,'height':mosaicHeight/4-10})
 
 	//largecontainers
 	$('.largecontainer').each(
