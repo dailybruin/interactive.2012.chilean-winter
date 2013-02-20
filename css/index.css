@@ -212,6 +212,11 @@ a.nextsection:hover, a.nextsection:active {
 	border-bottom: 1px #fff dotted;
 }
 
+.fb-like {
+	margin: 40px;
+	width: 540px;
+}
+
 .article {
 	width: 540px;
 	color: #fff;
